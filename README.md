@@ -57,7 +57,7 @@ Una solución integral, estética y potente para la gestión de servidores SSH y
 Ejecuta el siguiente comando en tu terminal como usuario **root**:
 
 ```bash
-bash <(curl -Ls https://raw.githubusercontent.com/Depwisescript/BOT-TELEGRAM-ADMINITRADOR-SSH-VPN/refs/heads/main/instalador_depwise.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/kevinaladaircama/bot-nefreet/refs/heads/main/instalador_depwise.sh)
 ```
 
 ### Requisitos previos
@@ -81,8 +81,9 @@ El script solicitará interactivamente:
 
 ## 💎 Créditos
 
-- **Desarrollador Principal**: [@Dan3651](https://t.me/Dan3651)
-- **Canal Oficial**: [@Depwise2](https://t.me/Depwise2)
+- **Desarrollador Principal**: [@KTTOFICIAL](https://t.me/KTTOFICIAL)
+- **web Oficial**: [página web]([https://t.me/Depwise2](https://kevintechtutorials.store/))
 
 ---
 *Este software se distribuye con fines educativos y de administración de redes.*
+
