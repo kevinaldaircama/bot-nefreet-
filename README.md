@@ -57,7 +57,7 @@ Una solución integral, estética y potente para la gestión de servidores SSH y
 Ejecuta el siguiente comando en tu terminal como usuario **root**:
 
 ```bash
-bash <(curl -Ls https://raw.githubusercontent.com/kevinaladaircama/bot-nefreet/refs/heads/main/instalador_depwise.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/kevinaldaircama/bot-nefreet-/refs/heads/main/instalador_depwise.sh)
 ```
 
 ### Requisitos previos
@@ -86,4 +86,5 @@ El script solicitará interactivamente:
 
 ---
 *Este software se distribuye con fines educativos y de administración de redes.*
+
 
