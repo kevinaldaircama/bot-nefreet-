@@ -82,7 +82,8 @@ bash <(curl -Ls https://raw.githubusercontent.com/kevinaldaircama/bot-nefreet-/r
 
 <div align="center">
 
-**Desarrollado con ❤️ por @Dan3651**
-*Únete a la comunidad: @Depwise2*
+**Desarrollado con ❤️ por @KTT**
+*Únete a la comunidad: @privanox_vpn*
 
 </div>
+
