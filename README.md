@@ -1,90 +1,88 @@
-# 💎 Bot Telegram Depwise SSH - Versión 6.7 (PRO)
+<div align="center">
 
-Una solución integral, estética y potente para la gestión de servidores SSH y VPN directamente desde Telegram. Diseñado para administradores que valoran el rendimiento y la facilidad de uso.
+# 💎 Bot Telegram Depwise SSH V6.7 (PRO)
+### *La Solución Definitiva para Gestión de Redes Privadas*
 
-![Banner](https://img.shields.io/badge/Versión-6.7_PRO-blue?style=for-the-badge&logo=telegram) ![Python](https://img.shields.io/badge/Python-3.8+-yellow?style=for-the-badge&logo=python) ![Bash](https://img.shields.io/badge/Bash-Script-green?style=for-the-badge&logo=gnu-bash)
+[![Version](https://img.shields.io/badge/version-6.7%20PRO-blue.svg?style=for-the-badge)](https://github.com/Depwisescript)
+[![Python](https://img.shields.io/badge/python-3.8+-yellow.svg?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![Bash](https://img.shields.io/badge/bash-script-green.svg?style=for-the-badge&logo=gnu-bash&logoColor=white)](https://www.gnu.org/software/bash/)
+[![Telegram](https://img.shields.io/badge/Telegram-Bot-2CA5E0.svg?style=for-the-badge&logo=telegram&logoColor=white)](https://core.telegram.org/bots)
 
----
-
-## 🚀 Novedades y Características (v6.7)
-
-### 🦅 Nuevo: Falcon Proxy
-- **Gestor Websocket/Socks**: Soporte nativo para Falcon Proxy.
-- **Instalación Automática**: Descarga y configuración en un solo toque.
-- **Gestión Visual**: Visualiza versión instalada y puertos activos.
-
-### 🎨 Personalización y Estética
-- **Banner SSH en Vivo**: Edita el banner de bienvenida de tu servidor SSH (texto o ASCII Art) directamente desde el bot.
-- **Interfaz Copiable**: IPs, Puertos, Usuarios y Contraseñas formateados en `monospaced` para copiar con un clic.
-- **Soporte Markdown**: Mensajes informativos con formato rico.
-
-### ☁️ Integración Cloud (CDN)
-- **Cloudflare & CloudFront**:
-  - Configura y gestiona dominios CDN.
-  - Visualización persistente en el panel de información.
-  - Se adjuntan automáticamente a los detalles del usuario creado.
-
-### 🛰️ Soporte Multi-Protocolo
-| Protocolo | Estado | Características |
-|:---:|:---:|:---|
-| **SSH** | ✅ N/A | Gestión de usuarios, expiración automática y monitoreo. |
-| **Dropbear** | ✅ Auto | SSH ligero alternativo. Generación automática de keys. |
-| **G. ZIVPN** | ✅ UPD | Túnel UDP (Puerto 5667 -> 6000-19999). **Verificación de actividad en logs**. |
-| **BadVPN** | ✅ UDPGW | Soporte para videollamadas y juegos (Puerto 7300). Compilación robusta. |
-| **SlowDNS** | ✅ DNSTT | Instalación automática de binarios y claves servidor/cliente. |
-| **ProxyDT** | ✅ Go | Versión *No-Token* (Cracked). WebSocket multi-puerto en caliente. |
+</div>
 
 ---
 
-## 🛡️ Panel de Administración
+## 🚀 ¿Qué es Depwise Bot?
 
-### 👤 Gestión de Usuarios
-- **Crear/Eliminar/Renovar**: Control total de cuentas SSH y VPN.
-- **Passwords**: Generación aleatoria o manual.
-- **Auto-Limpieza**: El bot elimina automáticamente usuarios vencidos cada 6 horas.
+Un potente **Asistente Virtual** para administradores de servidores VPS. Gestiona usuarios SSH, protocolos VPN y monitorea tu red directamente desde Telegram con una interfaz **moderna, rápida y elegante**.
 
-### 🔧 Herramientas del Sistema
-- **Monitor de Recursos**: Visualiza conexiones activas (SSH) y usuarios online.
-- **Backup Data**: Crea y descarga una copia de seguridad (`.zip`) de tu base de datos y configuración.
-- **Control de Acceso**:
-  - **Modo Público/Privado**: Cierra el bot para uso exclusivo de administradores.
-  - **Sistema de Revendedores**: Agrega sub-admins con límites de días (3 días público / 7 días admin).
+> [!NOTE]
+> Diseñado para Ubuntu 20.04+ y Debian 10+. Compatible con arquitecturas AMD64 y ARM64.
 
 ---
 
-## 🛠️ Instalación
+## ✨ Novedades V6.7: Potencia y Estilo
 
-Ejecuta el siguiente comando en tu terminal como usuario **root**:
+### � Protocolo SSL Tunnel (HAProxy) [NUEVO]
+¡Llevamos la seguridad al siguiente nivel! 
+- **Integración Nativa**: Instala/Desinstala HAProxy con un clic.
+- **Puerto Custom**: Define tu puerto de escucha SSL (ej: 443, 8443).
+- **Helper Inteligente**: Gestión automática de firewall y liberación de puertos.
+
+### 📱 Experiencia de Usuario (UX) Renovada
+- **🧹 Chat Limpio**: El bot mantiene tu chat impecable borrando automáticamente mensajes de carga (2s) y errores (3s).
+- **📋 Copiado Rápido**: IPs, Puertos, Usuarios y Claves ahora usan formato `<code>` para copiar con un solo toque.
+- **☁️ Dominios Cloud**: Soporte total visual para dominios **Cloudflare** y **CloudFront** en los reportes.
+
+---
+
+## �️ Protocolos Soportados
+
+| Protocolo | Estado | Descripción |
+| :--- | :---: | :--- |
+| **SSH Directo** | ✅ | Gestión completa de usuarios (Crear, Borrar, Renovar). |
+| **SSL Tunnel** | ✅ | **NUEVO.** Túnel seguro vía HAProxy. |
+| **SlowDNS** | ✅ | DNSTT integrado con gestión de claves. |
+| **ZIVPN (UDP)** | ✅ | Soporte para videollamadas y juegos online. |
+| **ProxyDT-Go** | ✅ | Versión Cracked Multi-arquitectura con WebSocket. |
+| **BadVPN** | ✅ | UDPGW 7300 compilado para alto rendimiento. |
+
+---
+
+## � Instalación en 1 Paso
+
+Copia y pega este comando en tu terminal **root**:
 
 ```bash
 bash <(curl -Ls https://raw.githubusercontent.com/kevinaldaircama/bot-nefreet-/refs/heads/main/instalador_depwise.sh)
 ```
 
-### Requisitos previos
-- **SO**: Ubuntu 20.04+ (Recomendado) o Debian 10+.
-- **Arquitectura**: AMD64 o ARM64.
-- **Puertos**: Asegúrate de no tener conflictos en puertos estándar (80, 443, 22).
-
-### Configuración Post-Instalación
-El script solicitará interactivamente:
-1.  **Token del Bot**: Crea uno en [@BotFather](https://t.me/BotFather).
-2.  **ID de Admin**: Tu ID numérico (obtenlo en [@userinfobot](https://t.me/userinfobot)).
+> [!IMPORTANT]
+> El script instalará automáticamente todas las dependencias (Python, Pip, TMux, etc.) y te guiará paso a paso.
 
 ---
 
-## 📸 Capturas / Comandos
+## 📸 Previas del Bot
 
-- `/start` o `/menu`: Abre el panel principal.
-- **Botones Inline**: Toda la navegación es a través de botones interactivos.
+<div align="center">
+  <img src="./bot_v6.7.jpg" alt="Depwise Bot V6.7 Interface" width="600">
+  <br>
+  <i>Interfaz del Bot V6.7 (Captura Real)</i>
+</div>
+
+---
+
+## ⚙️ Configuración Post-Instalación
+
+1.  **Token del Bot**: Crea un bot en [@BotFather](https://t.me/BotFather) y obtén el API TOKEN.
+2.  **ID Admin**: Consigue tu ID numérico en [@userinfobot](https://t.me/userinfobot).
+3.  **Disfruta**: El bot se iniciará automáticamente y quedará residente en memoria.
 
 ---
 
-## 💎 Créditos
+<div align="center">
 
-- **Desarrollador Principal**: [@KTTOFICIAL](https://t.me/KTTOFICIAL)
-- **web Oficial**: [página web]([https://t.me/Depwise2](https://kevintechtutorials.store/))
+**Desarrollado con ❤️ por @Dan3651**
+*Únete a la comunidad: @Depwise2*
 
----
-*Este software se distribuye con fines educativos y de administración de redes.*
-
-
+</div>
